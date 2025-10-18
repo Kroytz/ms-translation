@@ -1,7 +1,7 @@
 
 using Sharp.Shared.Objects;
 
-namespace Kroytz.Translation;
+namespace Kroytz.Translation.Interface;
 
 public interface ITranslation
 {

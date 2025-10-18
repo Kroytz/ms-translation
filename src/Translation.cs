@@ -4,6 +4,7 @@ using System.IO;
 using System.Reflection;
 using System.Text;
 using System.Text.Json;
+using Kroytz.Translation.Interface;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
@@ -90,13 +91,8 @@ public sealed class Translation : IModSharpModule, ITranslation, IClientListener
         ArgumentNullException.ThrowIfNull(version);
         ArgumentNullException.ThrowIfNull(coreConfiguration);
 
-        var configuration = new ConfigurationBuilder()
-                            .AddJsonFile(Path.Combine(dllPath, "appsettings.json"), false, false)
-                            .Build();
-
         var services = new ServiceCollection();
 
-        services.AddSingleton<IConfiguration>(configuration);
         services.AddSingleton(sharedSystem.GetLoggerFactory());
         services.TryAdd(ServiceDescriptor.Singleton(typeof(ILogger<>), typeof(Logger<>)));
 

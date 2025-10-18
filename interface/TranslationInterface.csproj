@@ -1,12 +1,12 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>disable</ImplicitUsings>
         <LangVersion>13</LangVersion>
         <Nullable>enable</Nullable>
-        <AssemblyName>TranslationTest</AssemblyName>
-        <RootNamespace>Kroytz.TranslationTest</RootNamespace>
+        <AssemblyName>Translation.Interface</AssemblyName>
+        <RootNamespace>Kroytz.Translation.Interface</RootNamespace>
         <Version>1.0</Version>
         <Copyright>©2025 Kroytz</Copyright>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
@@ -46,17 +46,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <None Update="appsettings.json">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
-    </ItemGroup>
-
-    <ItemGroup>
-      <PackageReference Include="ModSharp.Sharp.Shared" Version="2.0.29" PrivateAssets="all" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\interface\TranslationInterface.csproj" />
+        <PackageReference Include="ModSharp.Sharp.Shared" Version="2.0.4"  PrivateAssets="all" />
     </ItemGroup>
 
 </Project>

@@ -55,4 +55,8 @@
       <PackageReference Include="ModSharp.Sharp.Shared" Version="2.0.29" PrivateAssets="all" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\interface\TranslationInterface.csproj" />
+    </ItemGroup>
+
 </Project>
