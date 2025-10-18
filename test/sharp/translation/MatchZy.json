@@ -1,0 +1,26 @@
+{
+    "matchzy.ready.markedready": {
+        "en": "You have been marked as ready.",
+        "chi": "你已被标记为准备就绪。"
+    },
+    "matchzy.ready.markedunready": {
+        "en": "You have been marked as NOT ready.",
+        "chi": "你已被标记为未准备。"
+    },
+    "matchzy.pause.pausedthematch": {
+        "en": "{green}{0}{default} has paused the match. Type .unpause to unpause the match.",
+        "chi": "{green}{0}{default} 暂停了比赛。输入 .unpause 以继续比赛。"
+    },
+    "matchzy.pause.teamsunpausedthematch": {
+        "en": "Both teams have unpaused, resuming the match!",
+        "chi": "双方队伍都已解除暂停，比赛继续！"
+    },
+    "matchzy.pm.lineupsavedsucces": {
+        "en": "Lineup {green}{0}{default} saved successfully!",
+        "chi": "投掷点 {green}{0}{default} 保存成功！"
+    },
+    "matchzy.pracc.blind": {
+        "en": "{lightblue}{0}{default} has been blinded for {green}{1}{default}s",
+        "chi": "{lightblue}{0}{default} 被致盲，持续 {green}{1}{default} 秒"
+    }
+}
